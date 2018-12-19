@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="spmv_csr_vector_kernel">
+		<ndrange dim="1">
+			<global>131072</global>
+			<local>128</local>
+		</ndrange>
+
+		<input name="val" type="float" nmemb="10485" arg="0" />
+		<input name="vec" type="float" nmemb="1024" arg="1" />
+		<input name="cols" type="int" nmemb="10485" arg="2" />
+		<input name="rowDelimiters" type="int" nmemb="1025" arg="3" />
+		<input name="dim" type="int" nmemb="1" arg="4">1024</input>
+		<input name="vecWidth" type="int" nmemb="1" arg="5">128</input>
+		<output name="out" type="float" nmemb="1024" arg="6" epsilon="0.02" />
+	</kernel>
+</kernels>

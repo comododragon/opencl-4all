@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="findK">
+		<ndrange dim="1">
+			<global>2560000</global>
+			<local>256</local>
+		</ndrange>
+
+		<input name="height" type="long" nmemb="1" arg="0">2</input>
+		<input name="knodesDLocation" type="int" nmemb="7874" arg="1" />
+		<input name="knodesDIndices" type="int" nmemb="2023618" arg="2" />
+		<input name="knodesDKeys" type="int" nmemb="2023618" arg="3" />
+		<input name="knodesDIsLeaf" type="bool" nmemb="7874" arg="4" />
+		<input name="knodesDNumKeys" type="int" nmemb="7874" arg="5" />
+		<input name="knodes_elem" type="long" nmemb="1" arg="6">7874</input>
+		<input name="recordsD" type="int" nmemb="1000000" arg="7" />
+		<output name="currKnodeD" type="long" nmemb="10000" arg="8" />
+		<output name="offsetD" type="long" nmemb="10000" arg="9" />
+		<input name="keysD" type="int" nmemb="10000" arg="10" />
+		<output name="ansD" type="int" nmemb="10000" arg="11" />
+	</kernel>
+</kernels>

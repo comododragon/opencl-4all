@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="compute_step_factor">
+		<ndrange dim="1">
+			<global>97152</global>
+			<local>192</local>
+		</ndrange>
+
+		<input name="variables" type="float" nmemb="485760" arg="0" />
+		<input name="areas" type="float" nmemb="97152" arg="1" />
+		<output name="step_factors" type="float" nmemb="97152" arg="2" epsilon="0.01" />
+		<input name="nelr" type="int" nmemb="1" arg="3">97152</input>
+	</kernel>
+</kernels>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes" looppreamble="yes" looppostamble="yes">
+	<kernel name="hotspot">
+		<ndrange dim="2">
+			<global>640, 576</global>
+			<local>128, 64</local>
+		</ndrange>
+
+		<input name="iteration" type="int" nmemb="1" arg="0" />
+		<input name="power" type="float" nmemb="262144" arg="1" />
+		<output name="temp_src" type="float" nmemb="262144" arg="2" novalidation="true" />
+		<output name="temp_dst" type="float" nmemb="262144" arg="3" novalidation="true" />
+		<input name="grid_cols" type="int" nmemb="1" arg="4">512</input>
+		<input name="grid_rows" type="int" nmemb="1" arg="5">512</input>
+		<input name="pyramid_height" type="int" nmemb="1" arg="6" />
+		<input name="step_div_cap" type="float" nmemb="1" arg="7" />
+		<input name="Rx" type="float" nmemb="1" arg="8" />
+		<input name="Ry" type="float" nmemb="1" arg="9" />
+		<input name="Rz" type="float" nmemb="1" arg="10" />
+		<input name="small_block_rows" type="int" nmemb="1" arg="11" />
+		<input name="small_block_cols" type="int" nmemb="1" arg="12" />
+	</kernel>
+</kernels>

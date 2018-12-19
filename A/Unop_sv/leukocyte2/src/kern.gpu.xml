@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="dilate_kernel">
+		<ndrange dim="1">
+			<global>140272</global>
+			<local>176</local>
+		</ndrange>
+
+		<input name="img_m" type="int" nmemb="1" arg="0">219</input>
+		<input name="img_n" type="int" nmemb="1" arg="1">640</input>
+		<input name="strel_m" type="int" nmemb="1" arg="2">25</input>
+		<input name="strel_n" type="int" nmemb="1" arg="3">25</input>
+		<input name="c_strel" type="float" nmemb="625" arg="4" />
+		<input name="img" type="float" nmemb="140160" arg="5" />
+		<output name="dilated" type="float" nmemb="140160" arg="6" epsilon="0.001" />
+	</kernel>
+</kernels>

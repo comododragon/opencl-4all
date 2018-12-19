@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="lud_internal">
+		<ndrange dim="3">
+			<global>864, 864, 1</global>
+			<local>96, 96, 1</local>
+		</ndrange>
+
+		<output name="m" type="float" nmemb="1048576" arg="0" epsilon="0.001" />
+		<input name="matrix_dim" type="int" nmemb="1" arg="1">1024</input>
+		<input name="offset" type="int" nmemb="1" arg="2">0</input>
+	</kernel>
+</kernels>

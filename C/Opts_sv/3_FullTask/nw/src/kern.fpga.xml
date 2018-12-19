@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes" looppreamble="yes" looppostamble="yes">
+	<kernel name="nw_kernel1">
+		<ndrange dim="1">
+			<global>1</global>
+			<local>1</local>
+		</ndrange>
+
+		<input name="reference" type="int" nmemb="4196352" arg="0" />
+		<output name="data" type="int" nmemb="4196352" arg="1" />
+		<input name="input_v" type="int" nmemb="2049" arg="2" />
+		<input name="dim" type="int" nmemb="1" arg="3">2048</input>
+		<input name="penalty" type="int" nmemb="1" arg="4">10</input>
+		<input name="loop_exit" type="int" nmemb="1" arg="5" />
+		<input name="block_offset" type="int" nmemb="1" arg="6" />
+	</kernel>
+</kernels>

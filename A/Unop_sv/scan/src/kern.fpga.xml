@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="bottom_scan">
+		<ndrange dim="1">
+			<global>16384</global>
+			<local>256</local>
+		</ndrange>
+
+		<input name="in" type="float" nmemb="262144" arg="0" />
+		<input name="isums" type="float" nmemb="64" arg="1" />
+		<output name="out" type="float" nmemb="262144" arg="2" epsilon="0.1" />
+		<input name="n" type="int" nmemb="1" arg="3">262144</input>
+		<local type="float" nmemb="512" arg="4" />
+	</kernel>
+</kernels>

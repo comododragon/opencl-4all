@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" postamble="yes" cleanup="yes">
+	<kernel name="NearestNeighbor">
+		<ndrange dim="1">
+			<global>42816</global>
+		</ndrange>
+
+		<input name="d_locations" type="cl_float2" nmemb="42764" arg="0" />
+		<output name="d_distances" type="float" nmemb="42764" arg="1" novalidation="true" />
+		<input name="numRecords" type="int" nmemb="1" arg="2">42764</input>
+		<input name="lat" type="float" nmemb="1" arg="3" />
+		<input name="lng" type="float" nmemb="1" arg="4" />
+	</kernel>
+</kernels>

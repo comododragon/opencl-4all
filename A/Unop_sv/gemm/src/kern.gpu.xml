@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="sgemmNN">
+		<ndrange dim="2">
+			<global>32, 32</global>
+			<local>16, 4</local>
+		</ndrange>
+
+		<input name="A" type="float" nmemb="16384" arg="0" />
+		<input name="lda" type="int" nmemb="1" arg="1">128</input>
+		<input name="B" type="float" nmemb="16384" arg="2" />
+		<input name="ldb" type="int" nmemb="1" arg="3">128</input>
+		<output name="C" type="float" nmemb="16384" arg="4" novalidation="true" />
+		<input name="ldc" type="int" nmemb="1" arg="5">128</input>
+		<input name="k" type="int" nmemb="1" arg="6">128</input>
+		<input name="alpha" type="float" nmemb="1" arg="7">1</input>
+		<input name="beta" type="float" nmemb="1" arg="8">-1</input>
+	</kernel>
+</kernels>

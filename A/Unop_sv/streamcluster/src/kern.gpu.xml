@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="pgain_kernel">
+		<ndrange dim="2">
+			<global>65536, 1</global>
+			<local>256, 1</local>
+		</ndrange>
+
+		<input name="p_weight" type="float" nmemb="65536" arg="0" />
+		<input name="p_assign" type="long" nmemb="65536" arg="1" />
+		<input name="p_cost" type="float" nmemb="65536" arg="2" />
+		<input name="coord_d" type="float" nmemb="4194304" arg="3" />
+		<output name="work_mem_d" type="float" nmemb="786432" arg="4" epsilon="0.01" />
+		<input name="center_table_d" type="int" nmemb="65536" arg="5" />
+		<output name="switch_membership_d" type="char" nmemb="65536" arg="6" />
+		<local type="float" nmemb="256" arg="7" />
+		<input name="dim" type="int" nmemb="1" arg="8">64</input>
+		<input name="x" type="long" nmemb="1" arg="9">48541</input>
+		<input name="K" type="int" nmemb="1" arg="10">11</input>
+	</kernel>
+</kernels>

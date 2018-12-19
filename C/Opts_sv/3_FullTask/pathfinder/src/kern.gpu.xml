@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" looppreamble="yes" looppostamble="yes" postamble="yes" cleanup="yes">
+	<kernel name="dynproc_kernel">
+		<ndrange dim="1">
+			<global>1</global>
+			<local>1</local>
+		</ndrange>
+
+		<input name="wall" type="int" nmemb="990000" arg="0" />
+		<input name="src" type="int" nmemb="10000" arg="1" />
+		<output name="dst" type="int" nmemb="10000" arg="2" novalidation="true" />
+		<input name="cols" type="int" nmemb="1" arg="3">10000</input>
+		<input name="rem_rows" type="int" nmemb="1" arg="4" />
+		<input name="starting_row" type="int" nmemb="1" arg="5" />
+		<input name="comp_exit" type="int" nmemb="1" arg="6" />
+	</kernel>
+</kernels>

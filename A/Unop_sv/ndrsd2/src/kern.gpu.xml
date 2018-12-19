@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="chien">
+		<ndrange dim="1">
+			<global>256</global>
+			<local>256</local>
+		</ndrange>
+
+		<input name="lA" type="short" nmemb="4080" arg="0" />
+		<output name="errLocOut" type="short" nmemb="4080" arg="1" />
+		<output name="alphaInvOut" type="short" nmemb="4080" arg="2" />
+		<output name="errCnt" type="short" nmemb="255" arg="3" />
+		<input name="loopCount" type="unsigned char" nmemb="1" arg="4">255</input>
+	</kernel>
+</kernels>

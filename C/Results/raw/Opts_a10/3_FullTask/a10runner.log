@@ -1,0 +1,67 @@
+Initialising csv files...
+Running FPGA projects...
+	Running: nw
+		Project is not compiled
+	Running: hotspot
+Executing OpenCL code on host harp-08
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: hotspot3D
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: pathfinder
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05

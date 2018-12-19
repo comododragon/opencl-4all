@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="bpnn_adjust_weights_ocl">
+		<ndrange dim="3">
+			<global>16, 65536, 1</global>
+			<local>16, 16, 1</local>
+		</ndrange>
+
+		<input name="delta" type="float" nmemb="17" arg="0" />
+		<input name="hid" type="int" nmemb="1" arg="1">16</input>
+		<output name="ly" type="float" nmemb="65537" arg="2" />
+		<input name="in" type="int" nmemb="1" arg="3">65536</input>
+		<output name="w" type="float" nmemb="1114129" arg="4" epsilon="0.001" />
+		<output name="oldw" type="float" nmemb="1114129" arg="5" epsilon="0.001" novalidation="true" />
+	</kernel>
+</kernels>

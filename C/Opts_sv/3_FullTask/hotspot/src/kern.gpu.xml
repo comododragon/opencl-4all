@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" looppreamble="yes" looppostamble="yes">
+	<kernel name="hotspot">
+		<ndrange dim="1">
+			<global>1</global>
+			<local>1</local>
+		</ndrange>
+
+		<input name="power" type="float" nmemb="262144" arg="0" />
+		<output name="src" type="float" nmemb="262144" arg="1" novalidation="true" />
+		<output name="dst" type="float" nmemb="262144" arg="2" novalidation="true" />
+		<input name="grid_cols" type="int" nmemb="1" arg="3">512</input>
+		<input name="grid_rows" type="int" nmemb="1" arg="4">512</input>
+		<input name="sdc" type="float" nmemb="1" arg="5" />
+		<input name="Rx_1" type="float" nmemb="1" arg="6" />
+		<input name="Ry_1" type="float" nmemb="1" arg="7" />
+		<input name="Rz_1" type="float" nmemb="1" arg="8" />
+		<input name="comp_exit" type="int" nmemb="1" arg="9" />
+	</kernel>
+</kernels>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" looppreamble="yes" looppostamble="yes" cleanup="yes">
+	<kernel name="hotspotOpt1">
+		<ndrange dim="2">
+			<global>512, 512</global>
+			<local>64, 4</local>
+		</ndrange>
+
+		<output name="p" type="float" nmemb="2097152" arg="0" novalidation="true" />
+		<output name="tIn" type="float" nmemb="2097152" arg="1" novalidation="true" />
+		<output name="tOut" type="float" nmemb="2097152" arg="2" epsilon="0.01" />
+		<input name="sdc" type="float" nmemb="1" arg="3">0.341333</input>
+		<input name="nx" type="int" nmemb="1" arg="4">512</input>
+		<input name="ny" type="int" nmemb="1" arg="5">512</input>
+		<input name="nz" type="int" nmemb="1" arg="6">8</input>
+		<input name="ce" type="float" nmemb="1" arg="7">0.034133</input>
+		<input name="cw" type="float" nmemb="1" arg="8">0.034133</input>
+		<input name="cn" type="float" nmemb="1" arg="9">0.034133</input>
+		<input name="cs" type="float" nmemb="1" arg="10">0.034133</input>
+		<input name="ct" type="float" nmemb="1" arg="11">0.000533</input>
+		<input name="cb" type="float" nmemb="1" arg="12">0.000533</input>
+		<input name="cc" type="float" nmemb="1" arg="13">0.861867</input>
+	</kernel>
+</kernels>

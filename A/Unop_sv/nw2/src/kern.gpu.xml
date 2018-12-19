@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" looppreamble="yes" looppostamble="yes" postamble="yes">
+	<kernel name="nw_kernel2">
+		<ndrange dim="1">
+			<global>16</global>
+			<local>16</local>
+		</ndrange>
+
+		<input name="reference_d" type="int" nmemb="4198401" arg="0" />
+		<output name="input_itemsets_d" type="int" nmemb="4198401" arg="1" novalidation="true" />
+		<local name="input_itemsets_l" type="int" nmemb="289" arg="2" />
+		<local name="reference_l" type="int" nmemb="256" arg="3" />
+		<input name="cols" type="int" nmemb="1" arg="4">2049</input>
+		<input name="penalty" type="int" nmemb="1" arg="5">10</input>
+		<input name="blk" type="int" nmemb="1" arg="6">127</input>
+		<input name="block_width" type="int" nmemb="1" arg="7">128</input>
+		<input name="worksize" type="int" nmemb="1" arg="8">2048</input>
+		<input name="offset_r" type="int" nmemb="1" arg="9">0</input>
+		<input name="offset_c" type="int" nmemb="1" arg="10">0</input>
+	</kernel>
+</kernels>

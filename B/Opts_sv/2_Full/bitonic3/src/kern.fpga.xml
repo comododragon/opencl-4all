@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="bitonicMergeLocal">
+		<ndrange dim="1">
+			<global>2048</global>
+			<local>32</local>
+		</ndrange>
+
+		<output name="d_DstKey" type="unsigned int" nmemb="4096" arg="0" />
+		<output name="d_DstVal" type="unsigned int" nmemb="4096" arg="1" />
+		<input name="d_SrcKey" type="unsigned int" nmemb="4096" arg="2" />
+		<input name="d_SrcVal" type="unsigned int" nmemb="4096" arg="3" />
+		<input name="arrayLength" type="unsigned int" nmemb="1" arg="4">4096</input>
+		<input name="stride" type="unsigned int" nmemb="1" arg="5">32</input>
+		<input name="size" type="unsigned int" nmemb="1" arg="6">4096</input>
+		<input name="sortDir" type="unsigned int" nmemb="1" arg="7">1</input>
+	</kernel>
+</kernels>

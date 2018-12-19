@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="lud_perimeter">
+		<ndrange dim="3">
+			<global>1984, 1, 1</global>
+			<local>32, 1, 1</local>
+		</ndrange>
+
+		<output name="m" type="float" nmemb="1048576" arg="0" epsilon="0.001" />
+		<local type="float" nmemb="256" arg="1" />
+		<local type="float" nmemb="256" arg="2" />
+		<local type="float" nmemb="256" arg="3" />
+		<input name="matrix_dim" type="int" nmemb="1" arg="4">1024</input>
+		<input name="offset" type="int" nmemb="1" arg="5">16</input>
+	</kernel>
+</kernels>

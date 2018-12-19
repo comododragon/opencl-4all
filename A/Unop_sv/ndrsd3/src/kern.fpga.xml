@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="forneys">
+		<ndrange dim="1">
+			<global>256</global>
+			<local>256</local>
+		</ndrange>
+
+		<input name="lambda" type="short" nmemb="4080" arg="0" />
+		<input name="omega" type="short" nmemb="4080" arg="1" />
+		<input name="errCnt" type="short" nmemb="255" arg="2" />
+		<input name="errLoc" type="short" nmemb="4080" arg="3" />
+		<input name="alphaInv" type="short" nmemb="4080" arg="4" />
+		<output name="errOut" type="short" nmemb="56865" arg="5" />
+		<input name="loopCount" type="unsigned char" nmemb="1" arg="6">255</input>
+	</kernel>
+</kernels>

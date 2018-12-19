@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="rsd">
+		<ndrange dim="1">
+			<global>256</global>
+			<local>256</local>
+		</ndrange>
+
+		<input name="r" type="unsigned char" nmemb="65025" arg="0" />
+		<output name="out" type="unsigned char" nmemb="56865" arg="1" />
+		<input name="loopCount" type="unsigned char" nmemb="1" arg="2">255</input>
+	</kernel>
+</kernels>

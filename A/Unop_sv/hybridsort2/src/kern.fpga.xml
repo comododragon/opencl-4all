@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="bucketsort">
+		<ndrange dim="3">
+			<global>7840, 1, 1</global>
+			<local>32, 1, 1</local>
+		</ndrange>
+
+		<input name="input" type="float" nmemb="1004096" arg="0" />
+		<input name="indice" type="int" nmemb="1000000" arg="1" />
+		<output name="output" type="float" nmemb="1004096" arg="2" />
+		<input name="size" type="int" nmemb="1" arg="3">1000000</input>
+		<input name="d_prefixoffsets" type="unsigned int" nmemb="250880" arg="4" />
+		<input name="l_offsets" type="unsigned int" nmemb="1024" arg="5" />
+	</kernel>
+</kernels>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="FindKeyWithDigest_Kernel">
+		<ndrange dim="1">
+			<global>1000192</global>
+			<local>256</local>
+		</ndrange>
+
+		<input name="searchDigest0" type="unsigned int" nmemb="1" arg="0" />
+		<input name="searchDigest1" type="unsigned int" nmemb="1" arg="1" />
+		<input name="searchDigest2" type="unsigned int" nmemb="1" arg="2" />
+		<input name="searchDigest3" type="unsigned int" nmemb="1" arg="3" />
+		<input name="keyspace" type="int" nmemb="1" arg="4" />
+		<input name="byteLength" type="int" nmemb="1" arg="5">7</input>
+		<input name="valsPerByte" type="int" nmemb="1" arg="6">10</input>
+		<output name="foundIndex" type="int" nmemb="1" arg="7" forcepointer="true" />
+		<output name="foundKey" type="unsigned char" nmemb="8" arg="8" />
+		<output name="foundDigest" type="unsigned int" nmemb="4" arg="9" />
+	</kernel>
+</kernels>

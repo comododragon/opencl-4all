@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="GICOV_kernel">
+		<ndrange dim="1">
+			<global>104448</global>
+			<local>256</local>
+		</ndrange>
+
+		<input name="grad_m" type="int" nmemb="1" arg="0">219</input>
+		<input name="grad_x" type="float" nmemb="140160" arg="1" />
+		<input name="grad_y" type="float" nmemb="140160" arg="2" />
+		<input name="c_sin_angle" type="float" nmemb="150" arg="3" />
+		<input name="c_cos_angle" type="float" nmemb="150" arg="4" />
+		<input name="c_tX" type="int" nmemb="1050" arg="5" />
+		<input name="c_tY" type="int" nmemb="1050" arg="6" />
+		<output name="gicov" type="float" nmemb="140160" arg="7" epsilon="0.001" />
+		<input name="width" type="int" nmemb="1" arg="8">175</input>
+		<input name="height" type="int" nmemb="1" arg="9">596</input>
+	</kernel>
+</kernels>

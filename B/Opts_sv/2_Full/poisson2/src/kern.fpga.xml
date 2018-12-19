@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="cdot_advanced">
+		<ndrange dim="1">
+			<global>65536</global>
+			<local>64</local>
+		</ndrange>
+
+		<input name="A" type="cl_float16" nmemb="65536" arg="0" />
+		<input name="B" type="cl_float16" nmemb="65536" arg="1" />
+		<output name="result" type="float" nmemb="1024" arg="2" epsilon="0.01" />
+		<input name="size" type="int" nmemb="1" arg="3" />
+	</kernel>
+</kernels>

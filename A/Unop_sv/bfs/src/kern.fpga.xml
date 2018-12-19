@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes" cleanup="yes" looppreamble="yes" looppostamble="yes">
+	<kernel name="BFS_kernel_warp">
+		<ndrange dim="1">
+			<!-- TODO -->
+			<global>8192</global>
+			<local>8192</local>
+		</ndrange>
+
+		<output name="levels" type="unsigned int" nmemb="1000" arg="0" />
+		<input name="edgeArray" type="unsigned int" nmemb="1001" arg="1" />
+		<input name="edgeArrayAux" type="unsigned int" nmemb="1998" arg="2" />
+		<input name="W_SZ" type="int" nmemb="1" arg="3">32</input>
+		<input name="CHUNK_SZ" type="int" nmemb="1" arg="4">32</input>
+		<input name="numVertices" type="unsigned int" nmemb="1" arg="5" />
+		<input name="curr" type="int" nmemb="1" arg="6">0</input>
+		<output name="flag" type="int" nmemb="1" arg="7" novalidation="true" />
+	</kernel>
+</kernels>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="fft1D_512">
+		<ndrange dim="1">
+			<global>8192</global>
+			<local>64</local>
+		</ndrange>
+
+		<output name="work" type="cl_float2" nmemb="65536" arg="0" novalidation="true" />
+	</kernel>
+</kernels>

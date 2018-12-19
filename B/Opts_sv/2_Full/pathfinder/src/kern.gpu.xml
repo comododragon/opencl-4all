@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" looppreamble="yes" looppostamble="yes" postamble="yes" cleanup="yes">
+	<kernel name="dynproc_kernel">
+		<ndrange dim="1">
+			<global>16384</global>
+			<local>8192</local>
+		</ndrange>
+
+		<input name="iteration" type="int" nmemb="1" arg="0" />
+		<input name="gpuWall" type="int" nmemb="990000" arg="1" />
+		<input name="gpuSrc" type="int" nmemb="10000" arg="2" />
+		<output name="gpuResults" type="int" nmemb="10000" arg="3" novalidation="true" />
+		<input name="cols" type="int" nmemb="1" arg="4">10000</input>
+		<input name="startStep" type="int" nmemb="1" arg="5" />
+		<input name="border" type="int" nmemb="1" arg="6" />
+	</kernel>
+</kernels>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="mergeSortPass">
+		<ndrange dim="3">
+			<global>248976, 1, 1</global>
+			<local>208, 1, 1</local>
+		</ndrange>
+
+		<input name="input" type="cl_float4" nmemb="250383" arg="0" />
+		<output name="result" type="cl_float4" nmemb="250383" arg="1" />
+		<input name="nrElems" type="int" nmemb="1" arg="2">2</input>
+		<input name="threadsPerDiv" type="int" nmemb="1" arg="3">243</input>
+		<input name="constStartAddr" type="int" nmemb="1025" arg="4" />
+	</kernel>
+</kernels>

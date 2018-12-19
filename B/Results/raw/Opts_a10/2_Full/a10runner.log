@@ -1,0 +1,277 @@
+Initialising csv files...
+Running FPGA projects...
+	Running: poisson1
+Executing OpenCL code on host harp-08
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: poisson2
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: bitonic1
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: bitonic2
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: bitonic3
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: nw1
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: nw2
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: hotspot
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: hotspot3D
+		Project is not compiled
+	Running: pathfinder
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: srad
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: lud1
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: lud2
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-05
+		Iteration: 2
+Executing OpenCL code on host harp-06
+		Iteration: 3
+Executing OpenCL code on host harp-05
+		Iteration: 4
+Executing OpenCL code on host harp-06
+		Iteration: 5
+Executing OpenCL code on host harp-05
+		Iteration: 6
+Executing OpenCL code on host harp-06
+		Iteration: 7
+Executing OpenCL code on host harp-05
+		Iteration: 8
+Executing OpenCL code on host harp-06
+		Iteration: 9
+Executing OpenCL code on host harp-05
+	Running: lud3
+Executing OpenCL code on host harp-06
+		Iteration: 0
+		Iteration: 1
+Executing OpenCL code on host harp-08
+		Iteration: 2
+Executing OpenCL code on host harp-08
+		Iteration: 3
+Executing OpenCL code on host harp-08
+		Iteration: 4
+Executing OpenCL code on host harp-08
+		Iteration: 5
+Executing OpenCL code on host harp-08
+		Iteration: 6
+Executing OpenCL code on host harp-08
+		Iteration: 7
+Executing OpenCL code on host harp-08
+		Iteration: 8
+Executing OpenCL code on host harp-08
+		Iteration: 9
+Executing OpenCL code on host harp-08

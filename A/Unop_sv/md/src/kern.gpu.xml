@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" postamble="yes">
+	<kernel name="compute_lj_force">
+		<ndrange dim="1">
+			<global>12288</global>
+			<local>128</local>
+		</ndrange>
+
+		<output name="force" type="cl_float3" nmemb="12288" arg="0" epsilon="0.1" />
+		<input name="position" type="cl_float3" nmemb="12288" arg="1" />
+		<input name="maxNeighbors" type="int" nmemb="1" arg="2">128</input>
+		<input name="neighborList" type="int" nmemb="1572864" arg="3" />
+		<input name="cutsq" type="float" nmemb="1" arg="4">16</input>
+		<input name="lj1" type="float" nmemb="1" arg="5">1.5</input>
+		<input name="lj2" type="float" nmemb="1" arg="6">2</input>
+		<input name="nAtom" type="int" nmemb="1" arg="7">12288</input>
+	</kernel>
+</kernels>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" postamble="yes">
+	<kernel name="reduce">
+		<ndrange dim="1">
+			<global>16384</global>
+			<local>256</local>
+		</ndrange>
+
+		<input name="g_idata" type="float" nmemb="131072" arg="0" />
+		<output name="g_odata" type="float" nmemb="64" arg="1" epsilon="1.0e-8" />
+		<local type="float" nmemb="256" arg="2" />
+		<input name="n" type="unsigned int" nmemb="1" arg="3">131072</input>
+	</kernel>
+</kernels>

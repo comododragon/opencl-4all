@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" postamble="yes">
+	<kernel name="kernel_gpu_opencl">
+		<ndrange dim="1">
+			<global>128000</global>
+			<local>128</local>
+		</ndrange>
+
+		<input name="d_par_gpu_alpha" type="float" nmemb="1" arg="0" />
+		<input name="d_dim_gpu_number_boxes" type="long" nmemb="1" arg="1">1000</input>
+		<input name="d_box_gpu_offset" type="long" nmemb="1000" arg="2" />
+		<input name="d_box_gpu_nn" type="int" nmemb="1000" arg="3" />
+		<input name="d_box_gpu_nei_number" type="int" nmemb="26000" arg="4" />
+		<input name="d_rv_gpu" type="cl_float4" nmemb="100000" arg="5" />
+		<input name="d_qv_gpu" type="float" nmemb="100000" arg="6" />
+		<output name="d_fv_gpu" type="cl_float4" nmemb="100000" arg="7" novalidation="true" />
+	</kernel>
+</kernels>

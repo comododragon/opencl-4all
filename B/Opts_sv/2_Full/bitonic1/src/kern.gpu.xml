@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="bitonicSortLocal1">
+		<ndrange dim="1">
+			<global>2048</global>
+			<local>32</local>
+		</ndrange>
+
+		<output name="d_DstKey" type="unsigned int" nmemb="4096" arg="0" />
+		<output name="d_DstVal" type="unsigned int" nmemb="4096" arg="1" />
+		<input name="d_SrcKey" type="unsigned int" nmemb="4096" arg="2" />
+		<input name="d_SrcVal" type="unsigned int" nmemb="4096" arg="3" />
+	</kernel>
+</kernels>

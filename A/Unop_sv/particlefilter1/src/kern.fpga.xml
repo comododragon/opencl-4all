@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="likelihood_kernel">
+		<ndrange dim="3">
+			<global>40448, 1, 1</global>
+			<local>512, 1, 1</local>
+		</ndrange>
+
+		<output name="arrayX" type="double" nmemb="40000" arg="0" epsilon="0.001" />
+		<output name="arrayY" type="double" nmemb="40000" arg="1" epsilon="0.001" />
+		<input name="xj" type="double" nmemb="40000" arg="2" />
+		<input name="yj" type="double" nmemb="40000" arg="3" />
+		<output name="ind" type="int" nmemb="2760000" arg="4" />
+		<input name="objxy" type="int" nmemb="138" arg="5" />
+		<output name="likelihood" type="double" nmemb="40000" arg="6" epsilon="0.001" />
+		<input name="I" type="char" nmemb="163840" arg="7" />
+		<output name="weights" type="double" nmemb="40000" arg="8" epsilon="0.1" />
+		<input name="Nparticles" type="int" nmemb="1" arg="9">40000</input>
+		<input name="countOnes" type="int" nmemb="1" arg="10">69</input>
+		<input name="max_size" type="int" nmemb="1" arg="11">163840</input>
+		<input name="k" type="int" nmemb="1" arg="12">2</input>
+		<input name="IszY" type="int" nmemb="1" arg="13">128</input>
+		<input name="Nfr" type="int" nmemb="1" arg="14">10</input>
+		<input name="seed" type="int" nmemb="40000" arg="15" />
+		<!-- big epsilon, this result greatly depends on double implementation -->
+		<output name="partial_sums" type="double" nmemb="79" arg="16" epsilon="2" />
+		<local type="double" nmemb="512" arg="17" />
+	</kernel>
+</kernels>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels binary="program.aocx" profile="yes" preamble="yes">
+	<kernel name="vectorAdd">
+		<ndrange dim="1">
+			<global>65536</global>
+		</ndrange>
+
+		<input name="x" type="cl_float16" nmemb="65536" arg="0" />
+		<input name="y" type="cl_float16" nmemb="65536" arg="1" />
+		<output name="z" type="cl_float16" nmemb="65536" arg="2" epsilon="0.01" />
+	</kernel>
+</kernels>

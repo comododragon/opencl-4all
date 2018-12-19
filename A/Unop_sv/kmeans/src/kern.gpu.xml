@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes" looppreamble="yes" looppostamble="yes" cleanup="yes">
+	<kernel name="kmeans_kernel_c">
+		<ndrange dim="1">
+			<global>30208</global>
+			<local>256</local>
+		</ndrange>
+
+		<input name="feature" type="float" nmemb="1020000" arg="0" />
+		<input name="clusters" type="float" nmemb="170" arg="1" />
+		<output name="membership" type="int" nmemb="30000" arg="2" novalidation="true" />
+		<input name="npoints" type="int" nmemb="1" arg="3">30000</input>
+		<input name="nclusters" type="int" nmemb="1" arg="4">5</input>
+		<input name="nfeatures" type="int" nmemb="1" arg="5">34</input>
+		<input name="offset" type="int" nmemb="1" arg="6">0</input>
+		<input name="size" type="int" nmemb="1" arg="7">0</input>
+	</kernel>
+</kernels>

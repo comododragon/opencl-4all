@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernels source="kern.cl" profile="yes" preamble="yes">
+	<kernel name="histogram1024Kernel">
+		<ndrange dim="1">
+			<global>6144</global>
+			<local>96</local>
+		</ndrange>
+
+		<!-- This output heavily depends on precision of minimum and maximum. Therefore the epsilon is quite high -->
+		<output name="d_Result" type="unsigned int" nmemb="1024" arg="0" epsilon="50" />
+		<input name="d_Data" type="float" nmemb="1000000" arg="1" />
+		<input name="minimum" type="float" nmemb="1" arg="2">0.000001</input>
+		<input name="maximum" type="float" nmemb="1" arg="3">0.999998</input>
+		<input name="dataCount" type="unsigned int" nmemb="1" arg="4">1000000</input>
+	</kernel>
+</kernels>
