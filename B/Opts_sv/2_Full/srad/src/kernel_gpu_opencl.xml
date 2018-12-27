@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <kernels binary="program.aocx" profile="yes" preamble="yes" looppreamble="yes" looppostamble="yes" postamble="yes">
 	<kernel name="srad_kernel">
