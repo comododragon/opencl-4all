@@ -115,7 +115,7 @@ Inside `Unop_sv`, `Opts_sv/2_Full` and `Opts_sv/3_FullTask` for experiments A, B
 
 Using the provided `Makefile`, it is possible to compile for GPU, synthesise for FPGA or emulate for FPGA.
 
-*** We used NVIDIA and Intel FPGA boards. To adapt for your hardware, modifications may be necessary in the makefiles. Please see Section "Used hardware accelerators" for information about which platforms we used.***
+***We used NVIDIA and Intel FPGA boards. To adapt for your hardware, modifications may be necessary in the makefiles. Please see Section "Used hardware accelerators" for information about which platforms we used.**
 
 To compile and execute for GPU:
 ```
