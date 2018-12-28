@@ -33,7 +33,6 @@ We used the following hardware for our executions and profiling:
 * ***FPGA 1:*** BittWare S5PH-Q (Intel FPGA Stratix V 5sgxa7);
 	* Intel FPGA SDK for OpenCL version 16.1;
 * ***FPGA 2:*** Intel FPGA Hardware Accelerator Program (Intel FPGA Arria 10);
-	* Intel FPGA SDK for OpenCL version 16.0 Pro;
 * ***GPU 1:*** NVIDIA Quadro (NVIDIA Quadro K620);
 	* NVIDIA OpenCL SDK 384.81;
 * ***GPU 2:*** EVGA ACX 2.0 (NVIDIA GeForce GTX980).
@@ -78,15 +77,21 @@ $ ./projectschecker.sh
 ```
 
 To run all other scripts:
-```
-$ cd path/to/experiment/OPTLEVEL
-$ ./script.sh
-```
-
-OPTLEVEL differs in each experiment:
-* Experiment A: `Unop_sv`
-* Experiment B: `Opts_sv/2_Full`
-* Experiment C: `Opts_sv/3_FullTask`
+* Experiment A:
+	```
+	$ cd path/to/experiment/Unop_sv
+	$ ../script.sh
+	```
+* Experiment B:
+	```
+	$ cd path/to/experiment/Opts_sv/2_Full
+	$ ../../script.sh
+	```
+* Experiment C:
+	```
+	$ cd path/to/experiment/Opts_sv/3_FullTask
+	$ ../../script.sh
+	```
 
 #### Result files
 
