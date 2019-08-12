@@ -147,3 +147,5 @@ Some files are licensed under different terms. Please refer to the file's header
 ## Acknowledgments
 
 The authors would like to thank FAPESP (São Paulo Research Foundation, grant no. 2016/18937-7) for the financial support given to this research project, Intel for providing access to the Hardware Accelerator Research Program and Paderborn Center for Parallel Computing (PC2) at Paderborn University for maintaining the HARP infrastructure.
+
+The opinions, hypotheses, conclusions or recommendations contained in this material are the sole responsibility of the author(s) and do not necessarily reflect FAPESP opinion.
